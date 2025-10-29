@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>RTube</title>
+    <link rel="stylesheet" href="Gallery.css" />
+    <link rel="stylesheet" href="headerYT.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    
+
+  </head>
+  <body id="body">
+    <video autoplay loop muted id="bg-video" class="vidBack">
+      <source src="" type="video/mp4">
+    </video>
+
+    <div class="navbar shadow">
+      <div class="left">
+        <!-- SIDEBAR -->
+        <div class="dropdown" id="drop">
+          <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="garis3" id="menu" src="header logo/menu-black.png" type="button" />
+          </a>
+          <ul class="dropdown-menu shadow-sm" id="drop-menu">
+            <li>
+              <a class="dropdown-item" id="drop-item" href="MotionRhap.html">
+                <div class="sidebar-link"  onclick="fungsii()">
+                  <img src="sidebar/home-black.png" class="home" id="home"/>
+                  <div class="rumah">Home</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="Gallery.html">
+                <div class="sidebar-link">
+                  <img src="sidebar/playlist-black.png" class="home" id="playlist"/>
+                  <div class="rumah">Playlist</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- SIDEBAR -->
+        <img class="ytlogo" id="logo" src="icon/motionblack.png" />
+      </div>
+      <div class="middle">
+        <input class="search" id="input" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-logo" src="header logo/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+
+        <div class="hasil"></div>
+
+      </div>
+      <div class="right">
+        <a href="#">
+        <div class="up" name="up">
+          <img class="upload" id="upload" src="header logo/video-black.png" />
+          <div class="tooltip">Add Video</div>
+        </div>
+         </a>
+         
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class='bx bxs-sun' id="active">
+          </i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme()">
+              <i class='bx bxs-sun' id="active"></i> Sunny
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme2()">
+              <i class='bx bxs-moon' id="active"></i> Night
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme3()">
+              <i class='bx bxs-cloud-rain' id="active"></i> Rainy
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme4()">
+              <i class='bx bxs-ghost' id="active"></i> Spooky
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme5()">
+              <i class='bx bx-cloud-snow' id="active"></i> Snowy
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme6()">
+              <i class='bx bxs-leaf' id="active"></i> Autumn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme0()">
+              None
+            </a>
+          </li>
+        </ul>
+      </div>
+        
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="main-video">
+        <div class="video">
+          <iframe id="videoPlayer" controls autoplay allowfullscreen>
+            <source src="" />
+          </iframe>
+          <div class="title" id="judul">
+            <h3>Ngendap Ngendap Biar Nggak Ketahuan - The Outlast Trials Indonesia - Part 28</h3>
+            <p>MiawAug</p>
+            <p>170k Views &#183; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/kWeV975qTlo?autoplay=1" poster="thumbnail/maxresdefault.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Ngendap Ngendap Biar Nggak Ketahuan - The Outlast Trials Indonesia - Part 28</h3>
+            <p>MiawAug</p>
+            <p>170k Views &#183; 2 days ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/mP0RAo9SKZk?autoplay=1" poster="thumbnail/thumbnail-2.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Try Not To Laugh Challenge #9</h3>
+            <p>Markiplier</p>
+            <p>20M views &#183; 5 years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/jkHcC3uFJgM?autoplay=1" poster="thumbnail/hqdefault.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Shingeki no Kyojin Season 4 (Final Season) Part 4 - Official Trailer | Sub indonesia</h3>
+            <p>AnimeSelect</p>
+            <p>668k views &#183; 4 months ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/vtmUkmiriY8?autoplay=1" poster="thumbnail/filakustik.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Satu Hal Yang Kurindu // Nyanyian Pujian BagiMu (cover) by Filakustik</h3>
+            <p>Filakustik</p>
+            <p>420k views &#183; 4 years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/R8FHtIhWqNo?autoplay=1" poster="thumbnail/dhruv.webp"></video>
+          <div class="desc">
+            <h3 class="title2">dhruv - double take (official video)</h3>
+            <p>dhruv &#9834;</p>
+            <p>420k views &#183; 4 years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/h_WEaDBQBHM?autoplay=1" poster="thumbnail/msc.webp"></video>
+          <div class="desc">
+            <h3 class="title2">[EN] MSC Grand Finals | BLACKLIST INTERNATIONAL VS ONIC | Game 1</h3>
+            <p>MLBB eSports</p>
+            <p>48.3k views &#183; 4 months ago</p>
+          </div>
+        </div>
+
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/iL3fQi58mpg?autoplay=1" poster="thumbnail/napking.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Reels suci</h3>
+            <p>NapKing</p>
+            <p>14k views &#183; 2 days ago</p>
+          </div>
+        </div>
+
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/yXWw0_UfSFg?autoplay=1" poster="thumbnail/thumbnail-6.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Anything You Can Fit In The Circle I'll Pay For</h3>
+            <p>MrBeast</p>
+            <p>255M views &#183; 3 years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/fRph5rtFiRQ?autoplay=1" poster="thumbnail/aot1.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Attack On Titan Season 4 Part 3 - Official Main Trailer | English Sub</h3>
+            <p>AnimeSelect</p>
+            <p>1.8M views &#183; 5 months ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/rLpFdLkNIpo?autoplay=1" poster="thumbnail/jer.webp"></video>
+          <div class="desc">
+            <h3 class="title2">COBAIN RAMEN DAN JAPANESE FOOD DI INDIA! RASANYA... | WASEDABOYS WORLD TRIP 30</h3>
+            <p>Nihongo Mantappu</p>
+            <p>995k views &#183; 8 days ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/n0FBb6hnwTo?autoplay=1" poster="thumbnail/hq720 (3).webp"></video>
+          <div class="desc">
+            <h3 class="title2">Goodness Of God (LIVE) - Jenn Johnson | VICTORY</h3>
+            <p>Bethel Music</p>
+            <p>111M views &#183; 4 Years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/f5E9X5BKEjM?autoplay=1" poster="thumbnail/terhebat.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Terhebat-CJR (cover)</h3>
+            <p>Willy Anggawinata &#9834;</p>
+            <p>993k views &#183; 2 years ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/Lg55bKlkeK4?autoplay=1" poster="thumbnail/hq7202.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Attack On Titann Season 4 (Final Season) Part 4 - Official Trailer 2</h3>
+            <p>AnimeSelect</p>
+            <p>22K views &#183; 14 hours ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/HlAEOAevHD8?autoplay=1" poster="thumbnail/hq7201.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Mengejar Mimpi (feat.MCUC)</h3>
+            <p>Universitas Kristen Maranatha</p>
+            <p>1.2K views &#183; 9 days ago</p>
+          </div>
+        </div>
+        <div class="vid">
+          <video src="https://www.youtube.com/embed/f2oxGYpuLkw?autoplay=1" poster="thumbnail/praise.webp"></video>
+          <div class="desc">
+            <h3 class="title2">Praise (feat. Brandon Lake, Chris Brown & Chandler Moore) | Elevation Worship</h3>
+            <p>Elevation Worship &#9834;</p>
+            <p>30M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script2.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    
+
+  </body>
+</html>

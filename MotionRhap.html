@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html id="html" data-bs-theme="light">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>MotionRhap</title>
+    <link rel="stylesheet" href="MotionRhap.css" />
+    <link rel="stylesheet" href="headerYT.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <link rel="icon" href="icon/logo-black-removebg-preview.png" />
+  </head>
+  <body id="body">
+    <video autoplay loop muted id="bg-video">
+      <source src="" type="video/mp4">
+  </video>
+
+
+    <!-- NAVBAR -->
+    <div class="navbar shadow">
+      <div class="left">
+        <!-- SIDEBAR -->
+        
+        <div class="dropdown" id="drop">
+          <a class="btn" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <img class="garis3" id="menu" src="header logo/menu-black.png" type="button" />
+          </a>
+          <ul class="dropdown-menu shadow-sm side" id="drop-menu">
+            <li>
+              <a class="dropdown-item" id="drop-item" href="MotionRhap.html">
+                <div class="sidebar-link" id="">
+                  <img src="sidebar/home-black.png" id="home" class="home" />
+                  <div class="rumah">Home</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-item" onclick="fungsii('kWeV975qTlo', 'info1')">
+                <div class="sidebar-link">
+                  <img src="sidebar/playlist-black.png" id="playlist" class="home" />
+                  <div class="rumah">Playlist</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- SIDEBAR -->
+      
+        <img class="ytlogo" id="logo" src="icon/motionblack.png" />
+      </div>
+      <div class="middle">
+      
+        <input class="search" id="input" type="text" placeholder="Search" />
+        <button class="search-button">
+          <img class="search-logo" src="header logo/search.svg" />
+          <div class="tooltip">Search</div>
+        </button>
+      
+        <div class="hasil"></div>
+
+      </div>
+      <div class="right">
+        <a href="#">
+        <div class="up" name="up">
+          <img class="upload" id="upload" src="header logo/video-black.png" />
+          <div class="tooltip">Add Video</div>
+        </div>
+         </a>
+         
+        <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class='bx bxs-sun' id="active">
+          </i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme()">
+              <i class='bx bxs-sun' id="active"></i> Sunny
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme2()">
+              <i class='bx bxs-moon' id="active"></i> Night
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme3()">
+              <i class='bx bxs-cloud-rain' id="active"></i> Rainy
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme4()">
+              <i class='bx bxs-ghost' id="active"></i> Spooky
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme5()">
+              <i class='bx bx-cloud-snow' id="active"></i> Snowy
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme6()">
+              <i class='bx bxs-leaf' id="active"></i> Autumn
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item" href="#" onclick="theme0()">
+              None
+            </a>
+          </li>
+        </ul>
+      </div>
+        
+      </div>
+    </div>
+    <!-- NAVBAR -->
+
+    <!-- CONTENT -->
+    <!-- Setiap Video Yang di klik akan link ke Gallery.html dengan video, thumbnail dan judul yang sesuai -->
+    <div class="yt">
+      <div class="div1" id="div1" style="animation: naik 1s ease-in 0.2s 1 normal" onclick="fungsii('kWeV975qTlo', 'info1')" data-title="Ngendap Ngendap Biar Nggak Ketahuan - The Outlast Trials Indonesia - Part 28" data-title2="ngendap">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/maxresdefault.webp" />
+          </a>
+          <div class="time">31:55</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/miawaug.jpg" />
+          </div> 
+          <div class="info" id="info1">
+            <h3 class="taking">Ngendap Ngendap Biar Nggak Ketahuan - The Outlast Trials Indonesia - Part 28</h3>
+            <p class="mar">MiawAug</p>
+            <p class="view">170k Views &#183; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.2s 1 normal" onclick="fungsii('mP0RAo9SKZk', 'info2')" data-title="Try Not To Laugh Challenge #9" data-title2="try">
+        <div class="ver1" >
+          <a href="#">
+            <img class="thumb" src="thumbnail/thumbnail-2.webp"/>
+          </a>
+          <div class="time">8:22</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channel-2.jpeg" />
+          </div>
+          <div class="info" id="info2">
+            <h3 class="taking">Try Not To Laugh Challenge #9</h3>
+            <p class="mar">Markiplier</p>
+            <p class="view">20M views &#183; 5 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.2s 1 normal" onclick="fungsii('jkHcC3uFJgM', 'info3')" data-title="Attack On Titan Season 4 (Final Season) Part 4 - Official Trailer | Sub indonesia" data-title2="attack">
+        <div class="ver1" >
+          <a href="#">
+            <img class="thumb" src="thumbnail/hqdefault.webp" />
+          </a>
+          <div class="time">0:41</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels4_profile (1).jpg" />
+          </div>
+          <div class="info" id="info3">
+            <h3 class="taking">Attack On Titan Season 4 (Final Season) Part 4 - Official Trailer | Sub indonesia</h3>
+            <p class="mar">AnimeSelect</p>
+            <p class="view">668k views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.2s 1 normal" onclick="fungsii('vtmUkmiriY8', 'info4')" data-title="Satu Hal Yang Kurindu // Nyanyian Pujian BagiMu (cover) by Filakustik" data-title2="satu">
+        <div class="ver1" >
+          <a href="#">
+            <img class="thumb" src="thumbnail/filakustik.webp" />
+          </a>
+          <div class="time">9:04</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/filakustik.jpg" />
+          </div>
+          <div class="info" id="info4">
+            <h3 class="taking">Satu Hal Yang Kurindu // Nyanyian Pujian BagiMu (cover) by Filakustik</h3>
+            <p class="mar">Filakustik Official</p>
+            <p class="view">420k views &#183; 4 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.5s 1 normal" onclick="fungsii('R8FHtIhWqNo', 'info5')" data-title="dhruv - double take (official video)" data-title2="double">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/dhruv.webp" />
+          </a>
+          <div class="time">2:50</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/dhruv.jpg" />
+          </div>
+          <div class="info" id="info5">
+            <h3 class="taking">dhruv - double take (official video)</h3>
+            <p class="mar">dhruv &#9834;</p>
+            <p class="view">49M views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.5s 1 normal" onclick="fungsii('h_WEaDBQBHM', 'info6')" data-title="[EN] MSC Grand Finals | BLACKLIST INTERNATIONAL VS ONIC | Game 1" data-title2="msc">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/msc.webp" />
+          </a>
+          <div class="time">24:04</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels8_profile (1).jpg" />
+          </div>
+          <div class="info" id="info6">
+            <h3 class="taking">[EN] MSC Grand Finals | BLACKLIST INTERNATIONAL VS ONIC | Game 1</h3>
+            <p class="mar">MLBB eSports</p>
+            <p class="view">8.3k views &#183; 4 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.5s 1 normal" onclick="fungsii('iL3fQi58mpg', 'info7')" data-title="Reels suci" data-title2="reels">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/napking.webp" />
+          </a>
+          <div class="time">12:50</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/napking.jpg" />
+          </div>
+          <div class="info" id="info7">
+            <h3 class="taking">Reels suci</h3>
+            <p class="mar">NapKing</p>
+            <p class="view">14k views &#183; 2 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.5s 1 normal" onclick="fungsii('yXWw0_UfSFg', 'info8')" data-title="Anything You Can Fit In The Circle I'll Pay For" data-title2="anything">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/thumbnail-6.webp" />
+          </a>
+          <div class="time">20:00</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channel-6.jpeg" />
+          </div>
+          <div class="info" id="info8">
+            <h3 class="taking">Anything You Can Fit In The Circle I'll Pay For</h3>
+            <p class="mar">MrBeast</p>
+            <p class="view">255M views &#183; 3 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.8s 1 normal" onclick="fungsii('fRph5rtFiRQ', 'info9')" data-title="Attack On Titan Season 4 Part 3 - Official Main Trailer | English Sub" data-title2="attack">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/aot1.webp" />
+          </a>
+          <div class="time">1:49</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels4_profile (1).jpg" />
+          </div>
+          <div class="info" id="info9">
+            <h3 class="taking">Attack On Titan Season 4 Part 3 - Official Main Trailer | English Sub</h3>
+            <p class="mar">AnimeSelect</p>
+            <p class="view">1.8M views &#183; 5 months ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.8s 1 normal" onclick="fungsii('rLpFdLkNIpo', 'info10')" data-title="COBAIN RAMEN DAN JAPANESE FOOD DI INDIA! RASANYA... | WASEDABOYS WORLD TRIP 30" data-title2="cobain">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/jer.webp" />
+          </a>
+          <div class="time">13:56</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels9_profile (1).jpg" />
+          </div>
+          <div class="info" id="info10">
+            <h3 class="taking">COBAIN RAMEN DAN JAPANESE FOOD DI INDIA! RASANYA... | WASEDABOYS WORLD TRIP 30</h3>
+            <p class="mar">Nihongo Mantappu</p>
+            <p class="view">995k views &#183; 8 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.8s 1 normal" onclick="fungsii('n0FBb6hnwTo', 'info11')" data-title="Goodness Of God (LIVE) - Jenn Johnson | VICTORY" data-title2="goodness">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/hq720 (3).webp" />
+          </a>
+          <div class="time">5:04</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels7_profile (1).jpg" />
+          </div>
+          <div class="info" id="info11">
+            <h3 class="taking">Goodness Of God (LIVE) - Jenn Johnson | VICTORY</h3>
+            <p class="mar">Bethel Music</p>
+            <p class="view">111M views &#183; 4 Years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 0.8s 1 normal" onclick="fungsii('f5E9X5BKEjM', 'info12')" data-title="Terhebat-CJR (cover)" data-title2="terhebat">
+        <div class="ver1" >
+          <a href="#">
+            <img class="thumb" src="thumbnail/terhebat.webp" />
+          </a>
+          <div class="time">4:40</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/willy.jpg" />
+          </div>
+          <div class="info" id="info12">
+            <h3 class="taking">Terhebat-CJR (cover)</h3>
+            <p class="mar">Willy Anggawinata &#9834;</p>
+            <p class="view">933K views &#183; 2 years ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 1s 1 normal" onclick="fungsii('Lg55bKlkeK4', 'info13')" data-title="Attack On Titan Season 4 (Final Season) Part 4 - Official Trailer 2" data-title2="attack">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/hq7202.webp" />
+          </a>
+          <div class="time">0:41</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/channels4_profile (1).jpg" />
+          </div>
+          <div class="info" id="info13">
+            <h3 class="taking">Attack On Titan Season 4 (Final Season) Part 4 - Official Trailer 2</h3>
+            <p class="mar">AnimeSelect</p>
+            <p class="view">22K views &#183; 14 hours ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 1s 1 normal" onclick="fungsii('HlAEOAevHD8', 'info14')" data-title="mengejar">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/hq7201.webp" />
+          </a>
+          <div class="time">5:10</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/marnat.jpg" />
+          </div>
+          <div class="info" id="info14">
+            <h3 class="taking">Mengejar Mimpi (feat.MCUC)</h3>
+            <p class="mar">Universitas Kristen Maranatha</p>
+            <p class="view">1.2K views &#183; 9 days ago</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="div1" style="animation: naik 1s ease-in 1s 1 normal" onclick="fungsii('f2oxGYpuLkw', 'info15')" data-title="Praise (feat. Brandon Lake, Chris Brown & Chandler Moore) | Elevation Worship" data-title2="praise">
+        <div class="ver1">
+          <a href="#">
+            <img class="thumb" src="thumbnail/praise.webp" />
+          </a>
+          <div class="time">5:04</div>
+        </div>
+        <div class="ket">
+          <div class="chp">
+            <img class="pp" src="PP Channel/elevation.jpg" />
+          </div>
+          <div class="info" id="info15">
+            <h3 class="taking">Praise (feat. Brandon Lake, Chris Brown & Chandler Moore) | Elevation Worship</h3>
+            <p class="mar">Elevation Worship &#9834;</p>
+            <p class="view">30M views &#183; 6 months ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTENT -->
+    
+    <!-- JS -->
+
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="script2.js"></script>
+
+    
+    <!-- JS -->
+  </body>
+</html>

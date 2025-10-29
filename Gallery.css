@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.vidBack{
+  position: fixed; /* Video tetap di posisi tetap */
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1; /* Meletakkan video di belakang konten lainnya */
+}
+h1 {
+  font-size: 40px;
+  text-align: center;
+  padding: 10px;
+}
+p {
+  font-size: 15px;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 5px;
+  align-items: flex-start;
+  padding: 10px;
+  margin-top: 80px;
+}
+@media (max-width: 1000px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+.main-video {
+  background:transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  padding: 0px;
+}
+.main-video iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 10px;
+}
+.main-video .title {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-left: 20px;
+}
+.main-video .title h3 {
+  font-size: 23px;
+  margin-left: 0;
+}
+.main-video .title p {
+  font-size: 15px;
+  margin-top: 5px;
+}
+.playlist {
+  background: transparent;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  height: 560px;
+  overflow-y: scroll;
+  padding: 10px;
+  width: 510px;
+}
+@media (max-width: 1000px) {
+  .playlist {
+    width: 100%;
+  }
+}
+.playlist::-webkit-scrollbar {
+  width: 7px;
+}
+.playlist::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 50px;
+}
+.playlist::-webkit-scrollbar-thumb {
+  background-color: gray;
+  border-radius: 50px;
+}
+.playlist .vid video {
+  width: 160px;
+  border-radius: 10px;
+}
+.playlist .vid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin: 10px;
+  background:transparent;
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
+}
+.playlist .vid:hover {
+  background: #eee;
+  color:black;
+}
+.playlist .vid.active {
+  background-color: lightblue;
+}
+.title2{
+  font-size: 18px;
+}
+.playlist .vid.active .desc .title2 {
+  color: white;
+}
+

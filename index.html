@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet" />
+
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <title>MotionRhap</title>
+    <link rel="icon" href="icon/logo-black-removebg-preview.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="vh-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fw-bolder fixed-top" id="navb">
+      <div class="container">
+        <a class="navbar-brand fs-4" href="#">
+          <img src="icon/logo-black-removebg-preview.png" class="logo1" />
+        </a>
+        <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header text-white border-bottom">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="icon/motionblack.png" class="logo1" />
+            </h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" id="con" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="d-flex justify-content-center align-items-center">
+              <a href="MotionRhap.html">
+              <button type="button" class="btn btn-dark">Get Started</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main id="home">
+      <section class="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-black fs-1">
+        <img src="icon/motionblack.png" class="logo2 mb-4" />
+        <h3>A Video Gallery Based on YT</h3>
+        <a href="MotionRhap.html">
+          <button type="button" class="btn btn-outline-dark btn-lg border-3">Get Started</button>
+        </a>
+      </section>
+    </main>
+
+    <div class="about" id="about">
+      <div class="gambar">
+        <img src="images/yt3.jpg" class="yt w-100 h-100" />
+      </div>
+      <div class="text">
+        <h2>About MotionRhap</h2>
+        <p style="text-align: justify; font-size: 20px" class="fw-semibold">
+          MotionRhap is a Video Gallery Website inspired and the video based on YouTube.com, to make new experiences on watching videos. This website was created by Rafael Yefta Wijaya, a first year IT student at Maranatha Christian
+          University.
+        </p>
+      </div>
+    </div>
+
+    <section style="height: 300px; background-color: rgb(165, 165, 165)" id="contact" class="contact">
+      <aside class="A3">
+        <h4>Contact Me</h4>
+        <a href="https://www.instagram.com/rafaelyw30?igshid=YTQwZjQ0NmI0OA==" style="color: black; text-decoration: none" class="ms"> <img src="icon/instagram-alt-logo-24.png" /> Instagram </a><br />
+        <a href="https://www.facebook.com/rafael.yefta.9" style="color: black; text-decoration: none" class="ms"> <img src="icon/facebook-circle-logo-24.png" /> Facebook </a><br />
+        <a href="https://twitter.com/RafaelYW171493" style="color: black; text-decoration: none" class="ms"> <img src="icon/twitter-logo-24.png" /> Twitter </a>
+      </aside>
+      <article class="A2 mt-10 mb-10">
+        <img src="icon/motionblack.png" class="logo2 mb-4" />
+        <br />
+      </article>
+      <aside class="A1 pt-30 mb-10">
+        <b>&copy; 2372037 - Rafael Yefta Wijaya</b>
+      </aside>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

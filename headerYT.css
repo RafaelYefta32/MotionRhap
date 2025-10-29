@@ -1,0 +1,280 @@
+.navbar {
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(207, 207, 207);
+  border-bottom-style: solid;
+  z-index: 1;
+  backdrop-filter: blur(12px);
+  background: transparent;
+  border: none;
+}
+
+.left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left:0px;
+}
+.garis3 {
+  margin-left: 15px;
+  height: 35px;
+  margin-right: 28px;
+  width: 45px;
+  border: none;
+  padding-top: 0px;
+}
+.garis3:hover {
+  cursor: pointer;
+  background-color: rgb(223, 223, 223);
+  border-radius: 20px;
+}
+.ytlogo {
+  height: 35px;
+  margin-right: 3px;
+  margin-left: 5px;
+}
+
+.middle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+  margin-left: 70px;
+  margin-right: 35px;
+  max-width: 500px;
+  min-width: 0;
+}
+@media (max-width: 650px) {
+  .middle {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+}
+.search-button {
+  width: 50px;
+  height: 34px;
+  border-color: rgb(180, 180, 180);
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  background-color: rgb(220, 220, 220);
+  margin-left: -1px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+}
+@media (max-width: 650px) {
+  .search-button {
+    border-radius: 20px;
+  }
+  .search{
+    display: none;
+  }
+}
+.mic-button {
+  height: 35px;
+  width: 38px;
+  background-color: rgb(220, 220, 220);
+  border: none;
+  border-radius: 25px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.mic-button:hover{
+  cursor: pointer;
+  background-color: rgb(230, 230, 230);
+}
+.mic-logo {
+  height: 30px;
+}
+.search {
+  flex: 1;
+  height: 34px;
+  padding-left: 12px;
+  font-size: 16px;
+  border-color: rgb(180, 180, 180);
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(12px);
+  background: transparent;
+  min-width: 0px;
+  width:400px;
+}
+.hasil {
+  position: absolute;
+  top: 51px;
+  background-color: rgb(239, 239, 239);
+  width: 410px;
+  border-radius: 10px;
+}
+.hasil ul {
+  padding: 5px 8px;
+}
+.hasil li {
+  list-style: none;
+  border-radius: 3px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.hasil ul li:hover {
+  background-color: lightgray;
+}
+
+.search:active {
+  border-color: blue;
+}
+.search::placeholder {
+  font-family: arial;
+  font-size: 16px;
+}
+.search-logo {
+  height: 25px;
+  margin-top: 5px;
+}
+.right {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  width: 137px;
+  justify-content: space-between;
+  flex-shrink: 0;
+}
+@media (max-width: 650px) {
+  .right {
+    width: 130px;
+  }
+}
+.upload {
+  height: 28px;
+  cursor: pointer;
+}
+.pp {
+  width: 40px;
+  border-radius: 35px;
+  position: center;
+  cursor: pointer;
+}
+.Foto{
+  width:100%;
+  height:100%;
+  position:center;
+  border-radius:35px;
+  cursor:pointer;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  cursor: pointer;
+  font-family: arial;
+  transition: opacity 0.5s ease;
+}
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+.up{
+  width:40px;
+  height:40px;
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.up:hover{
+  background-color: rgb(220, 220, 220);
+}
+.up .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  cursor: pointer;
+  font-family: arial;
+  transition: opacity 0.5s ease;
+}
+.up:hover .tooltip {
+  opacity: 1;
+}
+.notif-div .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  cursor: pointer;
+  font-family: arial;
+  transition: opacity 0.5s ease;
+}
+.notif-div:hover .tooltip {
+  opacity: 1;
+}
+#drop{
+  width: 75px;
+  margin-right: 5px;
+}
+.btn {
+  border: none;
+}
+#drop-menu {
+  display: inline-block;
+  border: none;
+  min-width: 0px;
+  width: 85px;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#drop > .btn:focus + #drop-menu {
+  opacity: 1;
+  transform: translateY(0);
+}
+#drop-item {
+  padding: 0px;
+  margin-top: 10px;
+}
+
